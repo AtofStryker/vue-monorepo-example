@@ -1,0 +1,51 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": 2
+            }
+        ],
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-transform-modules-commonjs",
+        "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-transform-arrow-functions",
+        "@babel/plugin-transform-template-literals",
+        "@babel/plugin-transform-parameters",
+        "@babel/plugin-transform-shorthand-properties",
+        "@babel/plugin-transform-for-of",
+        "@babel/plugin-transform-block-scoping",
+        "@babel/plugin-transform-literals"
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "@babel/preset-env"
+            ],
+            "plugins": [
+                "@babel/plugin-proposal-object-rest-spread",
+                [
+                    "@babel/plugin-transform-runtime",
+                    {
+                        "corejs": 2
+
+                    }
+                ],
+                "@babel/plugin-syntax-dynamic-import",
+                "@babel/plugin-transform-modules-commonjs",
+                "@babel/plugin-proposal-export-default-from",
+                "@babel/plugin-transform-arrow-functions",
+                "@babel/plugin-transform-template-literals",
+                "@babel/plugin-transform-parameters",
+                "@babel/plugin-transform-shorthand-properties",
+                "@babel/plugin-transform-for-of",
+                "@babel/plugin-transform-block-scoping",
+                "@babel/plugin-transform-literals"
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+	"name": "@vue-mono/component-example-plain",
+	"description": "Example Vue Component",
+	"version": "1.0.0",
+	"author": "Bill Glesias",
+	"private": false,
+	"files": [
+		"dist"
+	],
+	"peerDependencies": {
+        "@babel/polyfill": "^7.0.0",
+        "@babel/runtime-corejs2": "^7.0.0",
+        "vue": "^2.0.0"
+    },
+	"main": "dist/index.js",
+	"scripts": {
+    "serve": "webpack-dev-server --watch --open --inline --config webpack.config.js --env.environment=development",
+		"build": "webpack --config webpack.config.js --env.environment=production",
+		"test": "jest --config test/jest.conf.js --no-cache",
+		"test-debug": "node --inspect-brk ../../../node_modules/jest/bin/jest.js --watch --runInBand --config test/jest.conf.js"
+	}
+}
