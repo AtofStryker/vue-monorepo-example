@@ -1,0 +1,22 @@
+{
+	"name": "@vue-mono/component-example-jsx",
+	"description": "Example Vue Component with jsx",
+	"version": "1.0.0",
+	"author": "Bill Glesias",
+	"private": false,
+	"files": [
+		"dist"
+	],
+	"peerDependencies": {
+        "@babel/polyfill": "^7.0.0",
+        "@babel/runtime-corejs2": "^7.0.0",
+        "vue": "^2.0.0"
+    },
+	"main": "dist/index.js",
+	"scripts": {
+    "serve": "webpack-dev-server --watch --open --inline --config webpack.config.js --env.environment=development",
+		"build": "webpack --config webpack.config.js --env.environment=production",
+		"test": "echo 'no tests configured'",
+		"test-debug": "echo 'no tests configured'"
+	}
+}
